@@ -3,7 +3,7 @@ package programs.games;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class ticTacToe {
+public class TicTacToe {
     public static void main(String[] args) {
         Scanner in  = new Scanner(System.in);
 
@@ -74,10 +74,12 @@ public class ticTacToe {
                     }
                     continue Res;
                 } else if (result.equalsIgnoreCase("No")) {
-                    return;
+                    break Res;
                 } else System.out.println("Error");
             }
         }
+
+        in.close();
     }
 
     private static boolean ifFullBoard(char[][] board) {
