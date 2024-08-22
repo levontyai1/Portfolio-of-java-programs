@@ -1,7 +1,9 @@
+package programs.games;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Main {
+public class ticTacToe {
     public static void main(String[] args) {
         Scanner in  = new Scanner(System.in);
 
@@ -59,7 +61,7 @@ public class Main {
                 }
             } else if (ifFullBoard(board)) {
                 System.out.println("It's a tie!");
-            }
+            } else continue;
 
             while (true) {
                 System.out.print("Repeat it?(Yes or No): ");
